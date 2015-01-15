@@ -1,5 +1,6 @@
 require 'open-uri'
 
-file = open('http://telemarktalk.com')
+url = gets.chomp('Enter a URL')
+file = open(url)
 contents = file.read
 puts contents
